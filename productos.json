@@ -1,0 +1,89 @@
+{
+  "status": "success",
+  "items": [
+    {
+      "id": 1,
+      "title": "Pirita en bruto",
+      "price": 5000,
+      "image": "./img/pirita.jpg",
+      "category": "cristal"
+    },
+    {
+      "id": 2,
+      "title": "Fosil de la Selva",
+      "price": 10400,
+      "image": "./img/fosil.jpg",
+      "category": "azul"
+    },
+    {
+      "id": 3,
+      "title": "Pulsera Mexican Amatista",
+      "price": 7500,
+      "image": "./img/mexicanamatista.jpg",
+      "category": "violeta"
+    },
+    {
+      "id": 4,
+      "title": "Dije Moonstone",
+      "price": 8700,
+      "image": "./img/moonstone.jpg",
+      "category": "cristal"
+    },
+    {
+      "id": 5,
+      "title": "Punta de cuarzo ahumado",
+      "price": 10500,
+      "image": "./img/punta.jpg",
+      "category": "cristal"
+    },
+    {
+      "id": 6,
+      "title": "Punta de cuarzo cristal",
+      "price": 8500,
+      "image": "./img/realcuarzo.jpg",
+      "category": "cristal"
+    },
+    {
+      "id": 7,
+      "title": "Anillo Silver Moonstone",
+      "price": 7900,
+      "image": "./img/anillomoon.jpg",
+      "category": "cristal"
+    },
+    {
+      "id": 8,
+      "title": "Jaspe rojo pulido",
+      "price": 2700,
+      "image": "./img/jasperojo.jpg",
+      "category": "rojo"
+    },
+    {
+      "id": 9,
+      "title": "Dije Malaquita",
+      "price": 3500,
+      "image": "./img/malaquita.jpg",
+      "category": "verde"
+    },
+    {
+      "id": 10,
+      "title": "Dije Turmalina",
+      "price": 3500,
+      "image": "./img/turmalina.jpeg",
+      "category": "negro"
+    },
+    {
+      "id": 11,
+      "title": "Multicristal",
+      "price": 37800,
+      "image": "./img/uao.jpg",
+      "category": "cristal"
+    },
+    {
+      "id": 12,
+      "title": "Selenita escultorica",
+      "price": 65000,
+      "image": "./img/selenita.jpg",
+      "category": "cristal"
+    }
+  ]
+}

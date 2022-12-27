@@ -2,64 +2,104 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIENDA DE CRISTALES</title>
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
     />
-    <title>Document</title>
+
+    <!--Box icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>TIENDA DE CRISTALES</h1>
-    <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo01"
-          aria-controls="navbarTogglerDemo01"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="#">Ocultus</a>
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
+    <!--Navegation-->
+    <nav class="nav">
+      <div class="nav__center container">
+        <div class="nav__logo">
+					<h1>TIENDA DE CRISTA<span>LES</span></h1>
+				</div>
+				<ul class="nav__list">
+					<span>
+						<i class="bx bxs-moon"></i>
+					</span>
+					<div class="carrito__icon">
+						<i class="bx bx-cart"></i>
+						<span class="item__total">0</span>
+					</div>
+				</ul>
       </div>
     </nav>
-  </body>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"
-  ></script>
-  <script src="./proyecto.js"></script>
+    <!--Filter-->
+    <section class="filter">
+      <div class="grid">
+        <div class="category">
+          <select id="category" onclick="categoryValue()">
+            <option value="">colores</option>
+            <option value="rojo">Rojo</option>
+            <option value="violeta">violeta</option>
+            <option value="verde">verde</option>
+            <option value="cristal">cristal</option>
+            <option value="azul">azul</option>
+            <option value="negro">negro</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!--Productos-->
+    <section class="productos">
+      <div class="productos__center">
+        <div class="producto">
+          <div class="image__container">
+            <img src="./img/fosil.jpg" alt="collar fosil de la selva">
+          </div>
+          <div class="producto__footer">
+            <h1>Cristales reales</h1>
+           
+            <div class="price">$10400</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <a href="#" class="btn addToCart">Añadir carrito</a>
+              <a href="./producto-detalles.html" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
+
+    <!--Carrito-->
+    
+    <section class="carrito__overlay">
+      <div class="carrito">
+        <span class="close__carrito">
+          <i class="bx bx-x"></i>
+        </span>
+        <h1>Su Carrito</h1>
+
+        <div class="carrito__center">
+
+       
+        </div>
+
+        <div class="carrito__footer">
+            <h3>Total: $ <span class="carrito__total">0</span></h3>
+            <button class="clear__carrito btn">remover carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="./proyecto.js"></script>
+  </body>
 </html>
